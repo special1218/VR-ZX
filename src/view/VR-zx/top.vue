@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    top
+    
   </div>
 </template>
 
@@ -10,13 +10,21 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  
 }
+/*#toptb{
+	width: 1300px;
+	height: 28px;
+	margin: 0 103px;
+	border: 1px solid white;
+}
+#wp{
+	width: 1300px;
+	height: 136px;
+	border: 1px solid deeppink;
+	margin: 0 103px;
+}*/
 </style>
