@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    footer
+    副科级拉所得积分离开的撒娇付了款
   </div>
 </template>
 
@@ -12,6 +12,6 @@ export default {
 
 <style scoped>
 #app {
-  
+  background: white;
 }
 </style>
