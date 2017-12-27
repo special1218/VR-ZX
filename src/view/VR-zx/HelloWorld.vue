@@ -57,7 +57,6 @@ export default {
 }
 .footer1{
 	width: 1190px;
-	height: 50px;
 	margin: 0 auto;
 	border: 1px solid #EDEDED;
 }

@@ -23,7 +23,7 @@
 	}
 	
 	#app {
-		margin-top: 20px;
+		padding: 15px 0px;
 		display: flex;
 		font-size: 10px;
 	}
