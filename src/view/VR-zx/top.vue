@@ -1,6 +1,13 @@
 <template>
-  <div id="app">
-    
+  <div id="top">
+    <div class="wp">
+    		<div class="top_left">
+    			
+    		</div>
+    		<div class="top_right">
+    			
+    		</div>
+    	</div>
   </div>
 </template>
 
@@ -12,19 +19,20 @@ export default {
 
 <style scoped>
 
-#app {
-  
+.top1 .wp{
+	width: 1190px;
+	margin: 0 auto;
 }
-/*#toptb{
-	width: 1300px;
+.wp .top_left{
+	width: 259px;
 	height: 28px;
-	margin: 0 103px;
-	border: 1px solid white;
+	background: red;
+	float: left;
 }
-#wp{
-	width: 1300px;
-	height: 136px;
-	border: 1px solid deeppink;
-	margin: 0 103px;
-}*/
+.wp .top_right{
+	width: 439px;
+	height: 28px;
+	background: yellow;
+	float: right;
+}
 </style>

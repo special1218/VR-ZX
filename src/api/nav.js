@@ -1,16 +1,16 @@
 import request from '../utils/request'
 
-export function getListById(query){
+export function getNavById(query){
 	return request({
-		url:'/infos/getById',
+		url:'/categories/getById',
 		method: 'get',
 		params: query
 	})
 }
 
-export function List(query){
+export function navList(query){
 	return request({
-		url: '/infos/list',
+		url: '/categories/list',
 		methods: 'get',
 		params: query
 	})
