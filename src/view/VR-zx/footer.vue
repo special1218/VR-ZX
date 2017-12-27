@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    鍓绾ф媺鎵�寰楃Н鍒嗙寮�鐨勬拻濞囦粯浜嗘
+    副科级拉所得积分离开的撒娇付了款
   </div>
 </template>
 
