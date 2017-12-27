@@ -1,35 +1,57 @@
 <template>
-  <div id="app">
-    <!--<div class="boo">
+	<div id="app">
+		<div class="boo" v-for="data in arr">
 			<div id="zuo">
-				<p id="dati">可读快捷快递复健科的打客服宽度</p>
-				<p id="zhongti">就看到撒发来的撒可富加了萨达放假可莱丝的距离看了看发多少解放路跨境电商付款的数量放假了速度了开发家里大老孙开发家里的事的索拉卡九分裤的数量爱上了快递费</p>
+				<p id="dati">{{data.title}}</p>
+				<p id="zhongti">{{data.content}}<a href="#">[详细]</a></p>
 				<ul>
-					<li><button>VR资讯</button></li>
-					<li>35人浏览</li>
-					<li>分享者：VR行业资讯</li>
-					<li>发布时间：2017-12-26 09:49 AM</li>
+					<li><button><a href="#">VR资讯</a></button></li>
+					<li>{{data.pv}}人浏览</li>
+					<li>{{data.author}}</li>
+					<li>发布时间：{{data.created_time}}</li>
 				</ul>
 			</div>
 			<div id="you">
-				<p><img src="../../assets/img/main-icon1.jpg" /></p>
+				<p><img :src="data.img" /></p>
 			</div>
-		</div>-->
-  </div>
+		</div>
+	</div>
 </template>
 
 <script>
-export default {
-  name: 'app'
-}
+	
+	import {List} from '../../api/list'
+	
+	export default {
+		data() {
+			return {
+				arr: []
+			}
+		},
+		created(){
+			this.getList()
+		},
+		methods:{
+			getList(){
+				const id=this.$route.params.id
+				List({id:id}).then(res=>{
+					this.arr=res.data.data
+						console.log(res.data)
+				})
+			}
+		}
+	}
 </script>
 
 <style scoped>
-#app {
-  
-}
-	/*.boo {
-		width: 97%;
+	* {
+		margin: 0 auto;
+		padding: 0;
+	}
+	
+	.boo {
+		margin-bottom: 20px;
+		width: 1150px;
 		display: flex;
 		padding: 20px 20px;
 		background: white;
@@ -38,19 +60,31 @@ export default {
 	#zuo {
 		width: 70%;
 	}
-	
 	#zuo ul li {
 		list-style: none;
 		color: #b6b6b6;
+		line-height: 40px;
 		float: left;
-		padding:0px 20px 0px 20px;
+		padding: 0px 20px 0px 20px;
 	}
 	
 	#zuo ul li button {
+		background: white;
+		border: none;
+	}
+	
+	#zuo ul li button a{
+		display: block;
 		padding: 5px 40px;
 		border: 1px #b6b6b6 solid;
 		color: #b6b6b6;
 		border-radius: 20px;
+		text-decoration: none;
+	}
+	
+	#zuo ul li button a:hover{
+		background: #ca3232;
+		color: white;
 	}
 	
 	#dati {
@@ -61,6 +95,10 @@ export default {
 	
 	#zhongti {
 		padding: 0px 30px 60px 30px;
+		/*display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		overflow: hidden;*/
 		color: #b6b6b6;
 	}
 	
@@ -71,5 +109,5 @@ export default {
 	#you p {
 		text-align: center;
 		padding: 30px 0px;
-	}*/
+	}
 </style>

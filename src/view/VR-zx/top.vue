@@ -2,21 +2,21 @@
   <div id="app">
     <div class="top_up">
       <ul class="ul_left">
-        <li>ç™»å½•</li>
-        <li style="width: 72px;">ç«‹å³æ³¨å†Œ</li>
-        <li style="width: 67.56px;">QQç™»é™†</li>
-        <li style="width: 72px;">å¾®ä¿¡ç™»é™†</li>
+        <li>µÇÂ¼</li>
+        <li style="width: 72px;">Á¢¼´×¢²á</li>
+        <li style="width: 67.56px;">QQµÇÂ½</li>
+        <li style="width: 72px;">Î¢ĞÅµÇÂ½</li>
       </ul>
       <ul class="ul_right">
-      	<li style="color: red;width: 93px;">ç­¾åˆ°å¾—ç§¯åˆ† ï¼</li>
-      	<li style="color: red;width: 93px;">åšä»»åŠ¡èµšç§¯åˆ†</li>
-      	<li style="color: orange;width: 104.72px;">QQç¾¤;8229505</li>
-      	<li style="width: 69px;">ç§¯åˆ†å…‘æ¢</li>
+      	<li style="color: red;width: 93px;">Ç©µ½µÃ»ı·Ö £¡</li>
+      	<li style="color: red;width: 93px;">×öÈÎÎñ×¬»ı·Ö</li>
+      	<li style="color: orange;width: 104.72px;">QQÈº;8229505</li>
+      	<li style="width: 69px;">»ı·Ö¶Ò»»</li>
       	<li style="width: 59px;">
       		<select style="color: #888;background: none; border: none;">
-      			<option>è”ç³»æˆ‘ä»¬</option>
-      			<option>ç‰ˆæƒæŠ•è¯‰</option>
-      			<option>å¹¿å‘ŠæŠ•æ”¾</option>
+      			<option>ÁªÏµÎÒÃÇ</option>
+      			<option>°æÈ¨Í¶Ëß</option>
+      			<option>¹ã¸æÍ¶·Å</option>
       		</select>
       	</li>
       </ul>
@@ -25,19 +25,19 @@
     	<div class="top_center_top">
     		<div class="top_center_top_left">
     			<img src="../../assets/img/top_logo.png" />
-          <a>ä¸“ä¸šVRæŠ€æœ¯å¼€å‘ç¤¾åŒºï¼Œå§‹å»ºäº2006å¹´</a>
+          <a>×¨ÒµVR¼¼Êõ¿ª·¢ÉçÇø£¬Ê¼½¨ÓÚ2006Äê</a>
     		</div>
         <div class="top_center_top_right">
         	<ul class="serch_ul">
         		<li>
         			<select style="color: #888;background: none; border: none;">
-      			    <option>å¸–å­</option>
-      			    <option>æ–‡ç« </option>
-      			    <option>ç”¨æˆ·</option>
+      			    <option>Ìû×Ó</option>
+      			    <option>ÎÄÕÂ</option>
+      			    <option>ÓÃ»§</option>
       		    </select>
         		</li>
         	</ul>
-        	<input type="text" value="è¯·è¾“å…¥æœç´¢å†…å®¹" placeholder="è¯·è¾“å…¥æœç´¢å†…å®¹" />
+        	<input type="text" value="ÇëÊäÈëËÑË÷ÄÚÈİ" placeholder="ÇëÊäÈëËÑË÷ÄÚÈİ" />
         	<button><img src="../../assets/img/serch.png"/></button>
         </div>
     	</div>
@@ -78,7 +78,7 @@ export default {
 	height: 16px;
 	text-decoration: none;
 	text-align: center;
-	font: 12px/1.5 'å¾®è½¯é›…é»‘',Tahoma,Helvetica,'SimSun',sans-serif;
+	font: 12px/1.5 'Î¢ÈíÑÅºÚ',Tahoma,Helvetica,'SimSun',sans-serif;
 }
 .top_center_top_left{
 	float: left;
