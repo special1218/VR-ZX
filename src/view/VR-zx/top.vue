@@ -1,48 +1,53 @@
 <template>
-  <div id="app">
-    <div class="top_up">
-      <ul class="ul_left">
-        <li>登录</li>
-        <li style="width: 72px;">立即注册</li>
-        <li style="width: 67.56px;">QQ登陆</li>
-        <li style="width: 72px;">微信登陆</li>
-      </ul>
-      <ul class="ul_right">
-      	<li style="color: red;width: 93px;">签到得积分 ！</li>
-      	<li style="color: red;width: 93px;">做任务赚积分</li>
-      	<li style="color: orange;width: 104.72px;">QQ群;8229505</li>
-      	<li style="width: 69px;">积分兑换</li>
-      	<li style="width: 59px;">
-      		<select style="color: #888;background: none; border: none;">
-      			<option>联系我们</option>
-      			<option>版权投诉</option>
-      			<option>广告投放</option>
-      		</select>
-      	</li>
-      </ul>
-    </div>
-    <div class="top_center">
-    	<div class="top_center_top">
-    		<div class="top_center_top_left">
-    			<img src="../../assets/img/top_logo.png" />
-          <a>专业VR技术开发社区，始建于2006年</a>
-    		</div>
-        <div class="top_center_top_right">
-        	<ul class="serch_ul">
-        		<li>
-        			<select style="color: #888;background: none; border: none;">
-      			    <option>帖子</option>
-      			    <option>文章</option>
-      			    <option>用户</option>
-      		    </select>
-        		</li>
-        	</ul>
-        	<input type="text" value="请输入搜索内容" placeholder="请输入搜索内容" />
-        	<button><img src="../../assets/img/serch.png"/></button>
-        </div>
-    	</div>
-    </div>
-  </div>
+<div id="app">
+	<div class="top_up">
+		<div class="top_left">
+			<a href="#">登录</a>
+			<a href="#">立即注册</a>
+			<a href="#">QQ登陆</a>
+			<a href="#">微信登陆</a>
+		</div>
+		<div class="top_right">
+			<a style="color: red">签到得积分 ！</a>
+			<a style="color: red">做任务赚积分</a>
+			<a style="color: orange">QQ群;8229505</a>
+			<a style="color: #999;">积分兑换</a>
+			<a>
+				<select style="color: #888;background: none; border: none;">
+					<option>联系我们</option>
+					<option>版权投诉</option>
+					<option>广告投放</option>
+				</select>
+			</a>
+		</div>
+	</div>
+	<div class="top_bottom">
+		<div class="logo">
+			<div class="logo_left">
+				<img src="../../assets/img/top_logo.png"/>
+				<a href="#" class="top_bottom_a">专业VR技术开发社区,始建于2006年</a>
+			</div>
+			<div class="logo_right">
+				<table cellspacing="0" cellpadding="0">
+					<tr>
+						<td class="table_left">
+							<a href="#">帖子</a>
+						</td>
+						<td class="table_center">
+							<input type="text" name="search" id="" placeholder="请输入搜索内容" />
+						</td>
+						<td class="table_right">
+							
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="nv">
+			
+		</div>
+	</div>
+</div>
 </template>
 
 <script>
@@ -54,87 +59,103 @@ export default {
 <style scoped>
 
 #app {
-
+	font-size: 12px;
 }
 .top_up{
 	height: 28px;
-	width: 100%;
-}
-.top_center{
-	width: 1333px;
-	height: 136px;
-}
-.top_center_top{
-	margin: 0 auto;
 	width: 1190px;
-	height: 60px;
-	padding: 18px 0px 18px 0px;
-	padding-right: px;
+	margin: 0 auto;
 }
-.top_center_top a{
-	display: block;
-	color: #555;
-	width: 210px;
-	height: 16px;
-	text-decoration: none;
-	text-align: center;
-	font: 12px/1.5 '微软雅黑',Tahoma,Helvetica,'SimSun',sans-serif;
-}
-.top_center_top_left{
-	float: left;
-}
-.top_center_top_right{
-	float: right;
-	position: relative;
-	
-}
-.top_center_top_right input{
-	
-}
-.top_center_top_right button{
-	border: 0;
-	background: none;
-}
-.serch_ul{
-	position: absolute;
-	top: 10%;
-  border: none;
-  padding: 0;
-  box-shadow: none;
-  background: #F5F5F5;
-  width: 61px;
-}
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-}
-li {
-  display: inline-block;
-  margin: 0;
-  color: #888;
-  font-size: 14px;
-}
-a {
-  color: #42b983;
-}
-.ul_left{
-	padding-left: 70.5px;
-  width: 30%;
+.top_left{
+	width: 260px;
   height: 28px;
   line-height: 28px;   
   float: left;                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
 }
-.ul_left li{
-	width: 48px;
-	text-align: center;
-	font-size: 12px;
+.top_left a{
+	text-decoration: none;
+	padding: 0 12px;
+	color: #999;
 }
-.ul_right{
+.top_left a:hover{
+	color: orangered;
+}
+.top_right{
 	float: right;
 	height: 28px;
-  line-height: 28px; 
-  padding-right: 85px; 
+  line-height: 28px;
+  width: 440px; 
+}
+.top_right a{
+	padding: 0 2px 0 10px;
+}
+.top_bottom{
+	width: 1190px;
+	height: 136px;
+	margin: 0 auto;
+}
+.logo{
+	width: 1190px;
+	height: 60px;
+	padding: 18px 0;
+}
+.nv{
+	width: 1190px;
+	height: 40px;
+	background: green;
+}
+.logo_left{
+	width: 208px;
+	height: 62px;
+	float: left;
+}
+
+.top_bottom_a{
+	color: #555;
+	text-decoration: none;
+}
+.top_bottom_a:hover{
+	color: #e69daa;
+}
+.logo_right{
+	width: 436px;
+	height: 30px;
+	float: right;
+	padding: 4px 0;
+	margin-top: 10px;
+}
+table{
+	width: 436px;
+	height: 30px;
+}
+.table_left{
+	width: 61px;
+	height: 30px;
+	background: url(http://www.52vr.com/template/qu_business/img/arrow.png) no-repeat right -70px;
+	background-color: #f5f5f5;
+}
+.table_left a{
+	padding-left: 10px;
+	text-decoration: none;
+	color: #999;
+}
+
+.table_center{
+	width: 305px;
+	height: 30px;
+	background: white;
+}
+.table_center input{
+	width: 300px;
+	height: 18px;
+	padding: 1px 0px 1px 5px;
+	outline: none;
+	border: none;
+	color: #999;
+}
+.table_right{
+	width: 70px;
+	background: url(http://www.52vr.com/template/qu_business/img/search.png) no-repeat center center;
+	background-color: #4691f3;
 }
 </style>

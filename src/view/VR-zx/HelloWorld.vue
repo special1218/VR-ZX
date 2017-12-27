@@ -38,8 +38,8 @@ export default {
 }
 .top1{
 	width: 100%;
-  background: black;
-  height: 175px;
+  background: #232121;
+  height: 164px;
 }
 
 .nav1{
