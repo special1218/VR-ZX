@@ -3,8 +3,8 @@
 		<div class="boo" v-for="data in arr">
 			<div id="zuo">
 				<a href="#" id="dati">{{data.title}}</a>
-				<p id="zhongti">{{data.content}}<a href="#">[详细]</a></p>
-				<ul>
+				<p id="zhongti">{{data.content}}<a href="#" style="color: #3587ec !important;">[详细]</a></p>
+				<ul style="margin-top: 15px;">
 					<li style="padding-left: 0;"><button><a href="#">VR资讯</a></button></li>
 					<li>{{data.pv}}人浏览</li>
 					<li>{{data.author}}</li>
@@ -50,7 +50,6 @@
 	font-size: 12px;
 	color: #888;
 }
-
 .boo {
 	margin-bottom: 20px;
 	width: 1190px;
@@ -89,7 +88,6 @@
 	color: white;
 	border: none;
 }
-
 #dati {
 	display: block;
 	font-size: 20px;
@@ -101,13 +99,8 @@
 	color: #0d58b4;
 }
 #zhongti {
-	padding: 0px 30px 60px 0px;
 	font-size: 14px;
-	/*display: -webkit-box;
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 2;
-	overflow: hidden;*/
-	color: #888;
+	height: 72px;
 }
 #you {
 	width: 20%;

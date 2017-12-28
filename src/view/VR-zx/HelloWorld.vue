@@ -63,14 +63,15 @@
 	}
 	
 	.footer1 {
+		border-top: 1px solid #EDEDED;
 		clear: both;
-		width: 1190px;
-		margin: 0 auto;
+		width: 100%;
+		height: 103px;
 	}
 	
 	#box {
 		position: fixed;
-		right: 2%;
+		right: 10%;
 		bottom: 15%;
 		display: none;
 		z-index: 100;
