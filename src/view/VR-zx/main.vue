@@ -36,7 +36,7 @@
 				const id=this.$route.params.id
 				List({id:id}).then(res=>{
 					this.arr=res.data.data
-						console.log(res.data)
+					console.log(res.data)
 				})
 			}
 		}

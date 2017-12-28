@@ -56,13 +56,6 @@
 	padding: 0px 14px;
 }
 
-.q_list_recommend dt a {
-	margin-left: 20px;
-	font-size: 12px;
-	font-weight: 400;
-	color: #f60 !important;
-}
-
 .q_list_recommend dd {
 	float: right;
 	display: inline;
@@ -77,7 +70,9 @@
 	border-bottom: 1px solid #eee;
 	margin-bottom: -1px;
 }
-
+.q_list_recommend dd a{
+	text-decoration: none;
+}
 .q_list_recommend a:link,
 .q_list_recommend a:visited {
 	color: #888;
