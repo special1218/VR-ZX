@@ -1,6 +1,6 @@
 <template>
 	<div id="app">
-		<div id="box">
+		<div id="box1">
 			<div class="zuo">
 				<p><a href="#">www.52vr.com</a></p>
 			</div>
@@ -24,7 +24,7 @@
 	padding: 0;
 }
 
-#box {
+#box1 {
 	width: 1190px;
 	height: 73px;
 	margin: 0 auto;
