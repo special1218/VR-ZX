@@ -56,6 +56,14 @@
 	padding: 0px 14px;
 }
 
+.q_list_recommend dt a {
+	margin-left: 20px;
+	font-size: 12px;
+	font-weight: 400;
+	text-decoration: none;
+	color: #f60 !important;
+}
+
 .q_list_recommend dd {
 	float: right;
 	display: inline;

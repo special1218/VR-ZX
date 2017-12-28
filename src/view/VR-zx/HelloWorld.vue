@@ -69,7 +69,7 @@
 	
 	#box {
 		position: fixed;
-		right: 7%;
+		right: 2%;
 		bottom: 15%;
 		display: none;
 		z-index: 100;
