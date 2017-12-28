@@ -70,9 +70,11 @@
 					<li>
 						<a href="#" hidefocus="true" title="Portal">首页</a>
 					</li>
+					<router-link to="/HelloWorld">
 					<li>
 						<a href="#" hidefocus="true">VR资讯</a>
 					</li>
+					</router-link>
 					<li>
 						<a href="#" hidefocus="true">VR教程</a>
 					</li>
@@ -85,9 +87,11 @@
 					<li>
 						<a href="#" hidefocus="true">VR公开课</a>
 					</li>
+					<router-link to="/body">
 					<li>
 						<a href="#" hidefocus="true">VR社区</a>
 					</li>
+					</router-link>
 				</ul>
 			</div>
 			<div class="nv_right">
