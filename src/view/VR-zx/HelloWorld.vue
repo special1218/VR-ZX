@@ -71,7 +71,7 @@
 	
 	#box {
 		position: fixed;
-		right: 10%;
+		right: 2%;
 		bottom: 15%;
 		display: none;
 		z-index: 100;
