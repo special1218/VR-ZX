@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    VR社区
+    jlkadsjfkldasjflkasjd
   </div>
 </template>
 

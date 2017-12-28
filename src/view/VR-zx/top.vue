@@ -87,7 +87,7 @@
 					<li>
 						<a href="#" hidefocus="true">VR公开课</a>
 					</li>
-					<router-link to="/body">
+					<router-link to="/sqIndex">
 					<li>
 						<a href="#" hidefocus="true">VR社区</a>
 					</li>
