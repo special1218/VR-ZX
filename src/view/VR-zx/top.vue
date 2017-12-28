@@ -13,7 +13,7 @@
 			<a href="#" class="orange">QQ群;8229505</a>
 			<a href="#" style="color: #999;">积分兑换</a>
 			<a>
-				<select style="color: #999;background: none; border: none;outline: none;">
+				<select class="sele" style="color: #999;background: none; border: none;outline: none;">
 					<option>联系我们</option>
 					<option>版权投诉</option>
 					<option>广告投放</option>
@@ -30,8 +30,15 @@
 			<div class="logo_right">
 				<table cellspacing="0" cellpadding="0">
 					<tr>
-						<td class="table_left">
-							<a href="#" id="tiezi">帖子</a>
+						<td id="table_left">
+							<a href="#" id="tiezi">
+								<select style="color: #999;background: none; border: none;outline: none;">
+									<option value="">帖子</option>
+									<option value="">文章</option>
+									<option value="">帖子</option>
+									<option value="">用户</option>
+								</select>
+							</a>
 						</td>
 						<td class="table_center">
 							<input type="text" name="search" id="" placeholder="请输入搜索内容" />
@@ -153,14 +160,14 @@ window.onload=function(){
 		}
 	}
 	
-	var tz=document.getElementById("tiezi")
-	var scbar_type_menu=document.getElementById("scbar_type_menu")
-	tz.onclick=function(){
-			scbar_type_menu.style.display="block"
-	}
-	tz.onmouseout=function(){
-			scbar_type_menu.style.display="none"
-	}
+//	var table_left=document.getElementById("table_left")
+//	var scbar_type_menu=document.getElementById("scbar_type_menu")
+//	table_left.onclick=function(){
+//		scbar_type_menu.style.display="block"
+//	}
+//	table_left.onmouseout=function(){
+//		scbar_type_menu.style.display="none"
+//	}
 }
 	
 			
@@ -170,7 +177,13 @@ export default {
 </script>
 
 <style scoped>
-
+.sele option{
+	border: none;
+	width: 61px;
+	height: 30px;
+	/*background: url(http://www.52vr.com/template/qu_business/img/arrow.png) no-repeat right -70px;*/
+	background-color: #f5f5f5;
+}
 #app {
 	font-size: 12px;
 }
@@ -248,13 +261,13 @@ table{
 	width: 436px;
 	height: 30px;
 }
-.table_left{
+#table_left{
 	width: 61px;
 	height: 30px;
 	background: url(http://www.52vr.com/template/qu_business/img/arrow.png) no-repeat right -70px;
 	background-color: #f5f5f5;
 }
-.table_left a{
+#table_left a{
 	padding-left: 10px;
 	text-decoration: none;
 	color: #999;

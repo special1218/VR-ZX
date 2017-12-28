@@ -2,17 +2,17 @@
 	<div id="app">
 		<div class="boo" v-for="data in arr">
 			<div id="zuo">
-				<p id="dati">{{data.title}}</p>
+				<a href="#" id="dati">{{data.title}}</a>
 				<p id="zhongti">{{data.content}}<a href="#">[详细]</a></p>
 				<ul>
-					<li><button><a href="#">VR资讯</a></button></li>
+					<li style="padding-left: 0;"><button><a href="#">VR资讯</a></button></li>
 					<li>{{data.pv}}人浏览</li>
 					<li>{{data.author}}</li>
 					<li>发布时间：{{data.created_time}}</li>
 				</ul>
 			</div>
 			<div id="you">
-				<p><img :src="data.img" /></p>
+				<a href="#"><img :src="data.thumbnail"  class="img"/></a>
 			</div>
 		</div>
 	</div>
@@ -44,70 +44,77 @@
 </script>
 
 <style scoped>
-	* {
-		margin: 0 auto;
-		padding: 0;
-	}
-	
-	.boo {
-		margin-bottom: 20px;
-		width: 1150px;
-		display: flex;
-		padding: 20px 20px;
-		background: white;
-	}
-	
-	#zuo {
-		width: 70%;
-	}
-	#zuo ul li {
-		list-style: none;
-		color: #b6b6b6;
-		line-height: 40px;
-		float: left;
-		padding: 0px 20px 0px 20px;
-	}
-	
-	#zuo ul li button {
-		background: white;
-		border: none;
-	}
-	
-	#zuo ul li button a{
-		display: block;
-		padding: 5px 40px;
-		border: 1px #b6b6b6 solid;
-		color: #b6b6b6;
-		border-radius: 20px;
-		text-decoration: none;
-	}
-	
-	#zuo ul li button a:hover{
-		background: #ca3232;
-		color: white;
-	}
-	
-	#dati {
-		font-size: 20px;
-		padding: 20px 30px;
-		color: #444444;
-	}
-	
-	#zhongti {
-		padding: 0px 30px 60px 30px;
-		/*display: -webkit-box;
-		-webkit-box-orient: vertical;
-		-webkit-line-clamp: 2;
-		overflow: hidden;*/
-		color: #b6b6b6;
-	}
-	
-	#you {
-		width: 30%;
-	}
-	
-	#you p {
-		text-align: center;
-		padding: 30px 0px;
-	}
+* {
+	margin: 0 auto;
+	padding: 0;
+	font-size: 12px;
+	color: #888;
+}
+
+.boo {
+	margin-bottom: 20px;
+	width: 1190px;
+	height: 208px;
+	display: flex;
+	padding-top: 20px;
+	background: white;
+}
+#zuo {
+	width: 70%;
+	height: 228px;
+}
+#zuo ul li {
+	list-style: none;
+	color: #999;
+	line-height: 40px;
+	float: left;
+	padding: 0px 20px 0px 20px;
+}
+#zuo ul li button {
+	width: 112px;
+	height: 22px;
+	background: white;
+	border: none;
+}
+#zuo ul li button a{
+	padding: 3px 6px;
+	display: block;
+	border: 1px #b6b6b6 solid;
+	color: #b6b6b6;
+	border-radius: 20px;
+	text-decoration: none;
+}
+#zuo ul li button a:hover{
+	background: #E52E2A;
+	color: white;
+	border: none;
+}
+
+#dati {
+	display: block;
+	font-size: 20px;
+	margin: 20px 0px;
+	color: #444444;
+	text-decoration: none;
+}
+#dati:hover{
+	color: #0d58b4;
+}
+#zhongti {
+	padding: 0px 30px 60px 0px;
+	font-size: 14px;
+	/*display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;*/
+	color: #888;
+}
+#you {
+	width: 20%;
+}
+.img{
+	width: 240px;
+	height: 136px;
+	padding-top: 20px;
+}
 </style>

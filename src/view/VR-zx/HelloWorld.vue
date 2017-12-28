@@ -63,6 +63,7 @@
 	}
 	
 	.footer1 {
+		clear: both;
 		width: 1190px;
 		margin: 0 auto;
 	}
