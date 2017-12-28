@@ -99,19 +99,21 @@
 				
 				<!--隐藏的div-->
 				<div id="b">
-					<div class="erweima" id="weixin_erweima">
+					<div class="erweima" id="tencent_erweima">
 						<ul class="nav">
-							<img src="http://www.52vr.com/template/qu_business/images/52vr_wechat.jpg" width="200" height="100">
+							<img src="http://www.52vr.com/template/qu_business/images/qq_erweima.jpg" width="200" height="100">
 						</ul>
 					</div>
+					
 					<div class="erweima" id="sina_erweima">
 						<ul class="nav">
 							<img src="http://www.52vr.com/template/qu_business/images/sina_erweima.jpg" width="200" height="100">
 						</ul>
 					</div>
-					<div class="erweima" id="tencent_erweima">
+					
+					<div class="erweima" id="weixin_erweima">
 						<ul class="nav">
-							<img src="http://www.52vr.com/template/qu_business/images/qq_erweima.jpg" width="200" height="100">
+							<img src="http://www.52vr.com/template/qu_business/images/52vr_wechat.jpg" width="200" height="100">
 						</ul>
 					</div>
 				</div>
