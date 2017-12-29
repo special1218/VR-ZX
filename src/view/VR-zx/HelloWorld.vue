@@ -1,21 +1,11 @@
 <template>
 	<div class="hello">
-		<top1 class="top1"></top1>
 		<main1 class="main1"></main1>
 		<footer1 class="footer1"></footer1>
-		<div id="box">
-			<a href="#"><img src="../../assets/img/dingbu.png" /></a>
-		</div>
 	</div>
 </template>
 
 <script>
-	window.onscroll = function() {
-		var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-		var box = document.getElementById("box");
-		box.style.display = scrollTop > 200 ? "block" : "none";
-	}
-	import top1 from './top.vue'
 	import main1 from './main.vue'
 	import footer1 from './footer.vue'
 
@@ -27,7 +17,6 @@
 			}
 		},
 		components: {
-			top1,
 			main1,
 			footer1
 		}
@@ -40,13 +29,6 @@
 		padding: 0;
 		background: #F5F5F5;
 	}
-	
-	.top1 {
-		width: 100%;
-		background: #232121;
-		height: 164px;
-	}
-	
 	.main1 {
 		
 		width: 1190px;
@@ -59,12 +41,5 @@
 		width: 100%;
 		height: 103px;
 	}
-	
-	#box {
-		position: fixed;
-		right: 2%;
-		bottom: 15%;
-		display: none;
-		z-index: 100;
-	}
+
 </style>

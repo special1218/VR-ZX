@@ -137,8 +137,6 @@ window.onload=function(){
 			
 export default {
  
- 
- 
 }
 </script>
 

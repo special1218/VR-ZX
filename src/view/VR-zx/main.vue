@@ -11,6 +11,7 @@
 			</dl>
 		</div>
 		
+	
 	<div class="boo" v-for="data in arr">
 			<div id="zuo">
 				<a href="#" id="dati">{{data.title}}</a>
