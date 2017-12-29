@@ -8,10 +8,10 @@ export function listByPage(query){
 	})
 }
 
-export function getListById(query){
+export function infosGetById(query){
 	return request({
-		url:'/infos/getById',
-		method: 'get',
+		url: '/infos/getById',
+		methods: 'get',
 		params: query
 	})
 }
@@ -19,6 +19,22 @@ export function getListById(query){
 export function List(query){
 	return request({
 		url: '/infos/list',
+		methods: 'get',
+		params: query
+	})
+}
+
+export function getNavById(query){
+	return request({
+		url:'/categories/getById',
+		method: 'get',
+		params: query
+	})
+}
+
+export function navList(query){
+	return request({
+		url: '/categories/list',
 		methods: 'get',
 		params: query
 	})

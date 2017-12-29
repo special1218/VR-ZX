@@ -55,28 +55,26 @@
 			<div class="nv_left">
 				<ul>
 					<li>
-						<a href="#" hidefocus="true" title="Portal">首页</a>
+						<a href="" hidefocus="true" title="Portal">首页</a>
 					</li>
 					<li>
-						<a href="#" hidefocus="true">VR资讯</a>
+						<a href="" hidefocus="true">VR资讯</a>
 					</li>
 					<li>
-						<a href="#" hidefocus="true">VR教程</a>
+						<a href="" hidefocus="true">VR教程</a>
 					</li>
 					<li>
-						<a href="#" hidefocus="true">招聘外包</a>
+						<a href="" hidefocus="true">招聘外包</a>
 					</li>
 					<li>
-						<a href="#" hidefocus="true" style="color: orange">虚幻引擎</a>
+						<a href="" hidefocus="true" style="color: orange">虚幻引擎</a>
 					</li>
 					<li>
-						<a href="#" hidefocus="true">VR公开课</a>
+						<a href="" hidefocus="true">VR公开课</a>
 					</li>
-					<router-link to="/sqIndex">
 					<li>
-						<a href="#" hidefocus="true">VR社区</a>
+						<a href="" hidefocus="true">VR社区</a>
 					</li>
-					</router-link>
 				</ul>
 			</div>
 			<div class="nv_right">
@@ -133,8 +131,7 @@ window.onload=function(){
 		}
 	}
 }
-	
-			
+
 export default {
  
 }

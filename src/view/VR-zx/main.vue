@@ -12,9 +12,9 @@
 		</div>
 		
 	
-	<div class="boo" v-for="data in arr">
+	<div class="boo" v-for="(data,index) in arr">
 			<div id="zuo">
-				<a href="#" id="dati">{{data.title}}</a>
+				<span id="dati" @click="pup(data.id)">{{data.title}}</span>
 				<p id="zhongti">{{data.content}}<a href="#" style="color: #3587ec !important;">[详细]</a></p>
 				<ul style="margin-top: 15px;">
 					<li style="padding-left: 0;"><button><a href="#">VR资讯</a></button></li>
@@ -24,16 +24,15 @@
 				</ul>
 			</div>
 			<div id="you">
-				<a href="#"><img :src="data.thumbnail"  class="img"/></a>
+				<span @click="pup(data.id)"><img :src="data.thumbnail"  class="img"/></span>
 			</div>
 		</div>
 	</div>
 </template>
 
 <script>
-	
-	import {navList} from '../../api/nav'
-	import {listByPage} from '../../api/list'
+
+	import {listByPage,navList} from '../../api/list'
 	
 	export default {
 		data(){
@@ -52,7 +51,6 @@
 			const id=this.$route.params.id
 			navList({id:id}).then(res=>{
 				this.listData=res.data.data
-//				console.log(res.data)
 			})
 			listByPage({
 				page:1,
@@ -60,7 +58,6 @@
 				category_id:1
 			}).then(res=>{
 				this.arr=res.data.data
-				console.log(res.data.data)
 			})
 		},
 		methods: {
@@ -76,7 +73,10 @@
                 }).then(res=>{
 					this.arr=res.data.data
 				})
-            }
+			},
+			pup(id){
+				this.$router.push('/list/'+id)
+			}
 		}
 	}
 </script>
@@ -204,6 +204,4 @@
 	height: 136px;
 	padding-top: 20px;
 }
-
-
 </style>

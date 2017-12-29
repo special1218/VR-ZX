@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/view/VR-zx/HelloWorld'
-import sqIndex from '@/view/VR-sq/sq-index'
-import zymList from '@/view/VR-zx/VR-zym/zym-list'
+import list from '@/view/VR-zx/VR-zym/list.vue'
+
 Vue.use(Router)
 
 export default new Router({
+	mode:'history',
 	routes: [
 		{path: '/',redirect:'HelloWorld'},
-		{path: '/HelloWorld',name: 'HelloWorld',component: HelloWorld},
-		{path: '/sqIndex',name: 'sqIndex',component: sqIndex},
-		{path: '/zymList',name: 'zymList',component: zymList}
+		{path: '/HelloWorld',component: HelloWorld},
+		{path: '/list/:id',component: list}
 	]
 })
