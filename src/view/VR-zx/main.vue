@@ -15,7 +15,7 @@
 	<div class="boo" v-for="(data,index) in arr">
 			<div id="zuo">
 				<span id="dati" @click="pup(data.id)">{{data.title}}</span>
-				<p id="zhongti">{{data.content}}<a href="#" style="color: #3587ec !important;">[详细]</a></p>
+				<p id="zhongti">{{data.content}}<span @click="pup(data.id)" style="color: #3587ec !important;">[详细]</span></p>
 				<ul style="margin-top: 15px;">
 					<li style="padding-left: 0;"><button><a href="#">VR资讯</a></button></li>
 					<li>{{data.pv}}人浏览</li>
