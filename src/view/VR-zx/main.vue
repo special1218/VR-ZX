@@ -1,5 +1,6 @@
 <template>
 	<div id="app">
+		
 		<div class="boo" v-for="data in arr">
 			<div id="zuo">
 				<a href="#" id="dati" @click="tiaozhuan()">{{data.title}}</a>

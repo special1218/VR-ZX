@@ -2,7 +2,7 @@
 	<div class="q_list_recommend cl">
 		<dl class="cl">
 			<dt>
-	    VR资讯<a href="http://www.52vr.com/portal.php?mod=rss&amp;catid=26" target="_blank" title="RSS">订阅</a>
+	          VR资讯<a href="http://www.52vr.com/portal.php?mod=rss&amp;catid=26" target="_blank" title="RSS">订阅</a>
 			</dt>
 			<dd v-for="data in arr">
 				<a href="">{{data.category_name}}</a>

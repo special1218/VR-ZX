@@ -32,7 +32,7 @@
 					<tr>
 						<td id="table_left">
 							<a href="#" id="tiezi">
-								<select style="color: #999;background: none; border: none;outline: none;">
+								<select>
 									<option value="">帖子</option>
 									<option value="">文章</option>
 									<option value="">帖子</option>
@@ -48,19 +48,6 @@
 						</td>
 					</tr>
 				</table>
-				
-				<ul id="scbar_type_menu" style="display: none;">
-					<li>
-						<a href="#" rel="article">文章</a>
-					</li>
-					<li>
-						<a href="#" rel="forum" class="curtype">帖子</a>
-					</li>
-					<li>
-						<a href="#" rel="user">用户</a>
-					</li>
-				</ul>
-
 				
 			</div>
 		</div>
@@ -131,23 +118,6 @@
 
 <script>
 
-//window.onload=function(){
-//	var a=document.getElementById("a1").getElementsByTagName("a")
-//	var b=document.getElementById("b").getElementsByClassName("erweima")
-//	for(var item in a){
-//		a[item].bh=item;
-//		a[item].onmouseover=function(){
-//			for(var i=0;i<b.length;i++){
-//				b[i].style.display="none"
-//				b[this.bh].style.display="block"
-//			}
-//		}
-//		a[item].onmouseout=function(){
-//			b[this.bh].style.display="none"
-//		}
-//	}
-//}
-
 window.onload=function(){
   var a=document.getElementById("a1").getElementsByTagName("a")
 	var b=document.getElementById("b").getElementsByClassName("erweima")
@@ -165,15 +135,6 @@ window.onload=function(){
 			b[this.index].style.display="none"
 		}
 	}
-	
-//	var table_left=document.getElementById("table_left")
-//	var scbar_type_menu=document.getElementById("scbar_type_menu")
-//	table_left.onclick=function(){
-//		scbar_type_menu.style.display="block"
-//	}
-//	table_left.onmouseout=function(){
-//		scbar_type_menu.style.display="none"
-//	}
 }
 	
 			
@@ -183,13 +144,7 @@ export default {
 </script>
 
 <style scoped>
-.sele option{
-	border: none;
-	width: 61px;
-	height: 30px;
-	/*background: url(http://www.52vr.com/template/qu_business/img/arrow.png) no-repeat right -70px;*/
-	background-color: #f5f5f5;
-}
+
 #app {
 	font-size: 12px;
 }
@@ -270,29 +225,16 @@ table{
 #table_left{
 	width: 61px;
 	height: 30px;
-	background: url(http://www.52vr.com/template/qu_business/img/arrow.png) no-repeat right -70px;
-	background-color: #f5f5f5;
 }
-#table_left a{
-	padding-left: 10px;
-	text-decoration: none;
-	color: #999;
+#tiezi{
+	display: block;
 }
-#scbar_type_menu{
-	width: 61px;
-	height: 100px;
-}
-#scbar_type_menu li{
-	list-style: none;
+#table_left select{
+    background: #f5f5f5;
+    border: none;
 	width: 61px;
 	height: 30px;
-	background: #f5f5f5;
-	line-height: 30px;
-}
-#scbar_type_menu li a{
-	padding-left: 10px;
-	text-decoration: none;
-	color: #999;
+	outline: none;
 }
 .table_center{
 	width: 305px;
