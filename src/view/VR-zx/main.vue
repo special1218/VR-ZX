@@ -37,13 +37,12 @@
 	export default {
 		data(){
 			return{
-				a:[],
 				arr:[],
 				listData: [],
 				cat_id: 0,
 				llistpage:{
 			    	page:1,
-			    	limit:3
+			    	// limit:3
 			   },
 			}
 		},
@@ -54,7 +53,7 @@
 			})
 			listByPage({
 				page:1,
-				limit:3,
+				// limit:3,
 				category_id:1
 			}).then(res=>{
 				this.arr=res.data.data

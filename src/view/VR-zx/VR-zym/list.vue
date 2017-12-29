@@ -29,12 +29,8 @@ import {infosGetById} from '../../../api/list'
 		},
 		created(){
 			this.id=this.$route.params.id
-			infosGetById({
-				id:this.id
-			}).then(res=>{
-				console.log(this.id)
+			infosGetById({id:this.id}).then(res=>{
 				this.arr=res.data
-				console.log(res.data.data)
 			})
 		}
 	}
