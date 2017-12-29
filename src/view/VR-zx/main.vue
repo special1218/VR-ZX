@@ -1,6 +1,17 @@
 <template>
-	<div id="app">
-		<div class="boo" v-for="data in arr">
+	<div id="main1">
+		<div class="q_list_recommend cl">
+			<dl class="cl">
+				<dt>
+		          VR资讯<a href="http://www.52vr.com/portal.php?mod=rss&amp;catid=26" target="_blank" title="RSS">订阅</a>
+				</dt>
+				<dd v-for="data in listData" @click="clickCategory(data.id)">
+					 <span>{{data.category_name}}</span>
+				</dd>
+			</dl>
+		</div>
+		
+	<div class="boo" v-for="data in arr">
 			<div id="zuo">
 				<a href="#" id="dati">{{data.title}}</a>
 				<p id="zhongti">{{data.content}}<a href="#" style="color: #3587ec !important;">[详细]</a></p>
@@ -20,25 +31,51 @@
 
 <script>
 	
-	import {List} from '../../api/list'
+	import {navList} from '../../api/nav'
+	import {listByPage} from '../../api/list'
 	
 	export default {
-		data() {
-			return {
-				arr: []
+		data(){
+			return{
+				a:[],
+				arr:[],
+				listData: [],
+				cat_id: 0,
+				llistpage:{
+			    	page:1,
+			    	limit:3
+			   },
 			}
 		},
 		created(){
-			this.getList()
+			const id=this.$route.params.id
+			navList({id:id}).then(res=>{
+				this.listData=res.data.data
+//				console.log(res.data)
+			})
+			listByPage({
+				page:1,
+				limit:3,
+				category_id:1
+			}).then(res=>{
+				this.arr=res.data.data
+				console.log(res.data.data)
+			})
 		},
-		methods:{
-			getList(){
-				const id=this.$route.params.id
-				List({id:id}).then(res=>{
+		methods: {
+			clickCategory(catid){
+				this.cat_id = catid;
+				this.gitList()
+			},
+            gitList() {
+                listByPage({
+                	page:this.llistpage.page,
+                	limit:this.llistpage.limit,
+                	category_id:this.cat_id
+                }).then(res=>{
 					this.arr=res.data.data
-					console.log(res.data)
 				})
-			}
+            }
 		}
 	}
 </script>
@@ -49,14 +86,70 @@
 	padding: 0;
 	font-size: 12px;
 	color: #888;
+}	
+#main1{
+	margin-top: 20px;
+}
+.q_list_recommend {
+	background-color: #FFF;
+	height: 45px;
+	width: 1190px;
+	border: 1px solid #EDEDED;
+}
+
+.q_list_recommend dl {
+	line-height: 44px;
+}
+
+.q_list_recommend dt {
+	color: #333;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.q_list_recommend dt {
+	float: left;
+	display: inline;
+	padding: 0px 14px;
+}
+
+.q_list_recommend dt a {
+	margin-left: 20px;
+	font-size: 12px;
+	font-weight: 400;
+	text-decoration: none;
+	color: #f60 !important;
+}
+
+.q_list_recommend dd {
+	float: right;
+	display: inline;
+	padding: 0px 24px;
+}
+
+.q_list_recommend dd {
+	border-left: 1px dashed #EDEDED;
+	height: 44px;
+	line-height: 44px;
+	font-size: 14px;
+	border-bottom: 1px solid #eee;
+	margin-bottom: -1px;
+}
+.q_list_recommend dd a{
+	text-decoration: none;
+}
+.q_list_recommend a:link,
+.q_list_recommend a:visited {
+	color: #888;
 }
 .boo {
-	margin-bottom: 20px;
+	margin-top: 20px;
 	width: 1190px;
 	height: 208px;
 	display: flex;
 	padding-top: 20px;
 	background: white;
+	border: 1px solid #EDEDED;
 }
 #zuo {
 	width: 70%;
@@ -110,4 +203,6 @@
 	height: 136px;
 	padding-top: 20px;
 }
+
+
 </style>

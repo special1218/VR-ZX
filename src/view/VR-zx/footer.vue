@@ -1,5 +1,5 @@
 <template>
-	<div id="app">
+	<div id="app" style="margin-top: 16px;">
 		<div id="box1">
 			<div class="zuo">
 				<p><a href="#">www.52vr.com</a></p>
@@ -14,7 +14,7 @@
 
 <script>
 	export default {
-		name: 'app'
+		
 	}
 </script>
 
@@ -23,12 +23,17 @@
 	margin: 0;
 	padding: 0;
 }
-
+.pg{
+	position: absolute;
+	right: 10px;
+	top: -10px;
+}
 #box1 {
+	position: relative;
 	width: 1190px;
 	height: 73px;
 	margin: 0 auto;
-	padding: 15px 0px;
+	padding: 20px 0px;
 	font-size: 10px;
 }
 
