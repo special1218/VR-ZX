@@ -1,5 +1,6 @@
 import request from '../utils/request'
 
+// 通过分类id获取资讯并分页
 export function listByPage(query){
 	return request({
 		url: '/infos/listByPage',
@@ -7,7 +8,7 @@ export function listByPage(query){
 		params: query
 	})
 }
-
+// 通过列表id获取所有详情数据
 export function infosGetById(query){
 	return request({
 		url: '/infos/getById',
@@ -15,23 +16,7 @@ export function infosGetById(query){
 		params: query
 	})
 }
-
-export function List(query){
-	return request({
-		url: '/infos/list',
-		methods: 'get',
-		params: query
-	})
-}
-
-export function getNavById(query){
-	return request({
-		url:'/categories/getById',
-		method: 'get',
-		params: query
-	})
-}
-
+// 分类列表
 export function navList(query){
 	return request({
 		url: '/categories/list',

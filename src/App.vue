@@ -44,7 +44,7 @@
 		width: 100%;
 		height: 164px;
 	}
-	.footer1 {
+	.footer {
 		border-top: 1px solid #EDEDED;
 		clear: both;
 		width: 100%;
