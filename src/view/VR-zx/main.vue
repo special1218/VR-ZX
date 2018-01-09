@@ -5,13 +5,14 @@
 				<dt>
 		          VR资讯<a href="http://www.52vr.com/portal.php?mod=rss&amp;catid=26" target="_blank" title="RSS">订阅</a>
 				</dt>
+				<!-- 渲染导航的数据 -->
 				<dd v-for="data in listData" @click="clickCategory(data.id)">
 					 <span>{{data.category_name}}</span>
 				</dd>
 			</dl>
 		</div>
 		
-	
+	<!-- 渲染列表的数据 -->
 	<div class="boo" v-for="(data,index) in arr">
 			<div id="zuo">
 				<span id="dati" @click="pup(data.id)">{{data.title}}</span>
@@ -37,8 +38,8 @@
 	export default {
 		data(){
 			return{
-				arr:[],
-				listData: [],
+				arr:[],   //  列表的数组
+				listData: [],   //导航的数组
 				cat_id: 0,
 				llistpage:{
 			    	page:1,

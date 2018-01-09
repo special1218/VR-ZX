@@ -1,5 +1,14 @@
 import request from '../utils/request'
 
+
+// 分类列表
+export function navList(query){
+	return request({
+		url: '/categories/list',
+		methods: 'get',
+		params: query
+	})
+}
 // 通过分类id获取资讯并分页
 export function listByPage(query){
 	return request({
@@ -12,14 +21,6 @@ export function listByPage(query){
 export function infosGetById(query){
 	return request({
 		url: '/infos/getById',
-		methods: 'get',
-		params: query
-	})
-}
-// 分类列表
-export function navList(query){
-	return request({
-		url: '/categories/list',
 		methods: 'get',
 		params: query
 	})

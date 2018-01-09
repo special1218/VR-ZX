@@ -1,5 +1,6 @@
 <template>
 	<div id="app">
+		<!-- 循坏遍历数组里的每一条数据 -->
 		<div class="aaa" v-for="data in arr">
 			<p class="biao">{{data.title}}</p>
 			<p class="shi"><span>查看：{{data.pv}} | 评论：1</span>{{data.created_time}} | 发布者：{{data.author}} | 原作者：{{data.promulgator}}</p>
@@ -28,7 +29,9 @@ import {infosGetById} from '../../../api/list'
 			}
 		},
 		created(){
+			// 获取每条id并根据id进行数据的渲染
 			this.id=this.$route.params.id
+			// 根据infosGetById这个接口获取id里的每条数据
 			infosGetById({id:this.id}).then(res=>{
 				this.arr=res.data
 			})
