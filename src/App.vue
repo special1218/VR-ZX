@@ -33,28 +33,28 @@
 </script>
 
 <style>
-	* {
-		margin: 0;
-		padding: 0;
-	}
-	#app{
-	   background: #F5F5F5;
-	}
-	.top1 {
-		width: 100%;
-		height: 164px;
-	}
-	.footer {
-		border-top: 1px solid #EDEDED;
-		clear: both;
-		width: 100%;
-		height: 103px;
-	}
-	#box {
-		position: fixed;
-		right: 2%;
-		bottom: 15%;
-		display: none;
-		z-index: 100;
-	}
+* {
+	margin: 0;
+	padding: 0;
+}
+#app{
+	background: #F5F5F5;
+}
+.top1 {
+	width: 100%;
+	height: 164px;
+}
+.footer {
+	border-top: 1px solid #EDEDED;
+	clear: both;
+	width: 100%;
+	height: 103px;
+}
+#box {
+	position: fixed;
+	right: 2%;
+	bottom: 15%;
+	display: none;
+	z-index: 100;
+}
 </style>

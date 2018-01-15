@@ -21,15 +21,12 @@
 </script>
 
 <style scoped>
-	* {
-		margin: 0;
-		padding: 0;
-	}
-	.main1 {
-		width: 1190px;
-		margin: 0 auto;
-	}
-	
-	
-
+* {
+	margin: 0;
+	padding: 0;
+}
+.main1 {
+	width: 1190px;
+	margin: 0 auto;
+}
 </style>
