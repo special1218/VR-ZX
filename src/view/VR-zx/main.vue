@@ -20,7 +20,7 @@
 				<ul style="margin-top: 15px;">
 					<li style="padding-left: 0;"><button><a href="#">VR资讯</a></button></li>
 					<li>{{data.pv}}人浏览</li>
-					<li>{{data.author}}</li>
+					<li>分享者：{{data.author}}</li>
 					<li>发布时间：{{data.created_time}}</li>
 				</ul>
 			</div>
